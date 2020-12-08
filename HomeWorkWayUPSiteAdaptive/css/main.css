@@ -1,0 +1,249 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #201b2d;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+ box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+p {
+    line-height: 1.65em;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgba(78,192,254,1);
+    background: -moz-linear-gradient(top, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(78,192,254,1)), color-stop(100%, rgba(55,144,217,1)));
+    background: -webkit-linear-gradient(top, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -o-linear-gradient(top, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -ms-linear-gradient(top, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: linear-gradient(to bottom, rgba(78,192,254,1) 0%, rgba(55,144,217,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ec0fe', endColorstr='#3790d9', GradientType=0 );
+    padding-top: 68px;
+    padding-bottom: 144px;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer {
+    width: 660px;
+}
+
+.title {
+ font-size: 37px;
+ width: 650px;
+}
+
+.title span {
+    font-size: 59px;
+}
+
+.intro {
+    margin-top: 30px;
+    margin-bottom: 46px;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    background: #ffd429;
+    color: #000000;
+    display: block;
+    width: 222px;
+    padding: 19px 0px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    background: #ffc029;
+}
+
+.desktop {
+    margin-top: 72px;
+}
+
+.learn {
+    padding-top: 108px;
+    padding-bottom: 120px;
+}
+
+.section-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.skill {
+    width: 302px;
+    background: url(../img/icon1.jpg) no-repeat center top;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.skill-title {
+    font-size: 19px;
+}
+
+.skill-text {
+    margin-top: 7px;
+}
+.skill-time {
+    width: 320px;
+    background: url(../img/icon1.jpg) no-repeat center top;
+    
+}
+
+.skill-free {
+    width: 320px;
+    background: url(../img/icon2.jpg) no-repeat center top;
+}
+
+
+.skill-value {
+    width: 300px;
+    background: url(../img/icon3.jpg) no-repeat center top;
+}
+
+.mail {
+    background: #ecf3f8;
+    padding-top: 102px;
+    padding-bottom: 102px;
+}
+
+.form {
+    margin-top: 60px;
+}
+
+.input {
+    width: 340px;
+    height: 49px;
+    border: 1px solid #bbbbbb;
+    font-size: 15px;
+    border-radius: 3px;
+    display:block;
+    margin: auto;
+    padding: 25px;
+    margin-bottom: 15px;
+
+}
+
+.btn-form {
+    border: 0;
+    margin:0 auto;
+    width: 340px;
+}
+
+.footer {
+    padding: 60px 0;
+    background: #164d7a;
+}
+
+.credits {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+}
+
+/*Responsive*/
+
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	.wrapper {
+		flex-direction: column;
+	}
+	.offer {
+		width: 100%;
+	}
+	.intro {
+		width: auto;
+	}
+	.desktop {
+		display: block;
+	    width: 549px;
+	    margin: 72px auto 0;
+	}
+	.skills {
+		flex-direction: column;
+	}
+	.skill {
+		width: auto;
+		margin-bottom: 30px;
+    }
+    
+    .title {
+        width: auto;
+    }
+    .logo {
+        padding-bottom: 70px;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	.desktop {
+		width: 100%;
+	}
+	.input {
+		width: 100%;
+	}
+	.btn {
+		margin-left: 0;
+	    margin-top: 15px;
+	    width: 100%;
+    }
+    
+    .logo {
+        padding-bottom: 70px;
+    }
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+    }
+    .logo {
+        padding-bottom: 70px;
+    }
+}
